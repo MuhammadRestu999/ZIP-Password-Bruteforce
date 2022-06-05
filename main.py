@@ -50,7 +50,6 @@ elif choose == 1:
         try:
           zip.extractall(pwd = bytes(password, "UTF-8"), path=file.replace(".zip", ""))
           new = clockString(time() - old, True)
-          print(time() - old)
           i += 1
           print(f"[*] Password found :)\n[**] Password : {password}\n[***] Takes {new} to complete. Requires {i} tries to complete")
           exit()
